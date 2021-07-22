@@ -9,4 +9,3 @@ Node.js -> node --version
 NPM -> npm -v
 Angular-cli -> ng version
 
-Definations
