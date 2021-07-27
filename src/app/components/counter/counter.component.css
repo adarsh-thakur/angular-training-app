@@ -1,0 +1,10 @@
+.wrapper{
+    padding: 20px;
+    margin: 20px;
+    background-color: yellow;
+    border: 10px solid green;
+    text-align: center;
+}
+button{
+    margin: 20px;
+}

@@ -2,14 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { HelloWorldComponent } from './components/hello-world/hello-world.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
       AppComponent,
+      HelloWorldComponent,
+      CounterComponent,
     ],
     imports: [
-      BrowserModule
+      BrowserModule,
+      FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

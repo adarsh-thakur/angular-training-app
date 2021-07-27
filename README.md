@@ -37,3 +37,9 @@ What a angular application consist?
 * style-template/file -> this will be a CSS file -> it willbe applied to your compoenets view -> <cmp-name>.component.css
 
 * specification file -> <cmp-name>.component.specs.ts -> testing code for your component -> not mandatory
+
+
+
+<!-- Create a new component -->
+ng g c <component-name> OR ng generate component <component-name>
+-> this will give you ready-made component -> in folder <component-name>
