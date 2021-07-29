@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'This is a Angular Component';
   buttonName = 'Click me';
-
   onButtonClick() {
     alert("Thanks for clicking the button");
   }

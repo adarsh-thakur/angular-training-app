@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class="user-detail-wrapper" *ngFor="let user of userDetails">  <!-- host Element -->
+        <div class="user-detail">Name: {{user.name}}</div>
+        <div class="user-detail" [ngClass]="user.gender == 'Female' ? 'female' : 'male'">Gender:{{user.gender}}</div>
+        <div class="user-detail" *ngIf="user.age < 23">Age :{{user.age}}</div>
+    </div>
+</div>
+
+<!--
+    Directive -> Component without view(HTML) -> they need host element
+        1. Built-in(ngFor,ngIf,ngClass)
+        2. Attribute
+        3. Structural
+ -->
+<!--
+    ngFor - to loop over array in HTML
+    syntax *ngFor="let varName of arrayName" ->
+ -->
+
+ <!--
+     ngClass -> to apply class attribute conditionally
+     [ngClass]="condition ? 'trueClass' : 'falseClass'"
+  -->
+
+  <!--
+      ngModel -> two way binding -> to apply on value attribute
+      [(ngModel)]="value"
+   -->
+
+   <!--
+       input -> name,age,address(textArea),gender
+       button -> addUser, resetUser
+       action -> addUser -> a User will be added in Array(localVariable) reset-> input reset
+       after adding user -> show user in card
+    -->

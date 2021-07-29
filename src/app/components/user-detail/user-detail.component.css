@@ -1,0 +1,26 @@
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.user-detail-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #e6e6e6;
+    max-width: 25%;
+    border: 2px solid black;
+}
+.user-detail{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.male{
+    color: blue;
+}
+.female {
+    color:pink
+}
