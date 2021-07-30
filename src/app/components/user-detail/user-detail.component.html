@@ -1,3 +1,13 @@
+<div class="form-wrapper">
+    <div style="margin-left: 10px;">
+        Name: <input type="text" name="name" id="name" [(ngModel)]="name">
+    </div>
+    <div style="margin-left: 10px;">Age: <input type="number" name="age" id="age" [(ngModel)]="age"></div>
+    <div style="margin-left: 10px;"><button (click)="addUserToList()">Add User</button></div>
+</div>
+
+
+<h3>User List here :</h3>
 <div class="wrapper">
     <div class="user-detail-wrapper" *ngFor="let user of userDetails">  <!-- host Element -->
         <div class="user-detail">Name: {{user.name}}</div>

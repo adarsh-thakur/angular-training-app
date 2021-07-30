@@ -6,6 +6,7 @@ import { HelloWorldComponent } from './components/hello-world/hello-world.compon
 import { CounterComponent } from './components/counter/counter.component';
 import { FormsModule } from '@angular/forms';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
@@ -14,6 +15,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
       HelloWorldComponent,
       CounterComponent,
       UserDetailComponent,
+      LifeCycleComponent,
     ],
     imports: [
       BrowserModule,

@@ -8,49 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class UserDetailComponent implements OnInit {
   userDetails: any = [
     {
-      name: 'Adarsh Thakur',
-      gender: 'Male',
-      age:25
-
-    },
-    {
-      name: 'Pranali',
-      gender: 'Female',
-      age:22
-
-    },{
-      name: 'Vibha',
-      gender: 'Female',
-      age:21
-
-    },
-    {
-      name: 'Pushpa',
-      gender: 'Female',
-      age:20
-    },
-    {
-      name: 'Archana',
-      gender: 'Female',
-      age:23
-
-    },
-    {
-      name: 'Bhushan',
-      gender: 'Male',
-      age:25
+      name: 'Adarsh',
+      age:26
     }
   ];
+  name: string = '';
+  age: number = 0;
   constructor() {
-    for (let user of this.userDetails) {
-      console.log(user.name);
-      console.log(user.age);
-      console.log(user.gender);
-    }
   }
 
 
   ngOnInit(): void {
   }
 
+  addUserToList() {
+    let user = {
+      name: this.name,
+      age: this.age
+    };
+    this.userDetails.push(user)
+    this.name = '';
+    this.age = 0;
+    }
 }
