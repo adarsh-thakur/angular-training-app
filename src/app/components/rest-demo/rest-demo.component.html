@@ -1,0 +1,10 @@
+<h3>User List here :</h3>
+<div class="wrapper">
+    <div class="user-detail-wrapper" *ngFor="let user of userDetailArray">  <!-- host Element -->
+        <div class="user-detail"> <img [src]="user.avatar" alt="user-profile" class="user-profile"></div>
+        <div class="user-detail">ID: {{user.id}}</div>
+        <div class="user-detail">First Name: {{user.first_name}}</div>
+        <div class="user-detail">Last Name: {{user.last_name}}</div>
+        <div class="user-detail">Email: {{user.email}}</div>
+    </div>
+</div>

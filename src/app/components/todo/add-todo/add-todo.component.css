@@ -1,0 +1,20 @@
+.add-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.todo-input {
+    font-size: 18px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+.add-btn{
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    box-shadow: #626262 1px 2px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}

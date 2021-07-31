@@ -1,0 +1,22 @@
+.todo-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+    background-color: #e6e6e6;
+}
+.todo-adder{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: #c1ffb2;
+    padding: 10px;
+}
+.todo-list{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: #f3ffaf;
+    padding: 10px;
+}

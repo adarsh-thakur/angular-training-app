@@ -13,7 +13,9 @@ export class AppComponent implements OnInit {
     alert("Thanks for clicking the button");
   }
   ngOnInit(){
-    setTimeout(() => { this.showLifeCycleCmp = false; }, 3000);
+    setTimeout(() => {
+      this.showLifeCycleCmp = false;
+    },3000);
     setTimeout(() => { this.showLifeCycleCmp = true; }, 6000);
 
     // syntax - setTimeOut(function,interval) -> interval in ms

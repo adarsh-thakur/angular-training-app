@@ -7,6 +7,10 @@ import { CounterComponent } from './components/counter/counter.component';
 import { FormsModule } from '@angular/forms';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
+import { TodoComponent } from './components/todo/todo.component';
+import { AddTodoComponent } from './components/todo/add-todo/add-todo.component';
+import { TodoListComponent } from './components/todo/todo-list/todo-list.component';
+import { RestDemoComponent } from './components/rest-demo/rest-demo.component';
 
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
@@ -16,6 +20,10 @@ import { LifeCycleComponent } from './components/life-cycle/life-cycle.component
       CounterComponent,
       UserDetailComponent,
       LifeCycleComponent,
+      TodoComponent,
+      AddTodoComponent,
+      TodoListComponent,
+      RestDemoComponent,
     ],
     imports: [
       BrowserModule,

@@ -43,3 +43,8 @@ What a angular application consist?
 <!-- Create a new component -->
 ng g c <component-name> OR ng generate component <component-name>
 -> this will give you ready-made component -> in folder <component-name>
+
+
+
+<!-- REST API -> REPRESENTATIONAL STATEFUL TRANSFER APPLICATION PROGRAMMING INTERFACE-->
+<!-- When ever you want to transfer data over the web(http) you will use REST -->
