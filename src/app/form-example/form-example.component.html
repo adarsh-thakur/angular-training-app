@@ -1,0 +1,17 @@
+<div class="form-wrapper">
+    <!-- <form></form> -->
+    <!-- TEMPLATE DRIVEN FORM -->
+    <div>
+        <input type="text" name="name" id="name" [(ngModel)]="name" required (keypress)="print()">
+    </div>
+
+    <!-- REACTIVE FORM -->
+    <div style="margin-top: 20px;">
+        <input type="text" name="name" id="name" [formControl]="nameFormControl">
+    </div>
+    <div style="margin-top: 20px;">
+        <input type="text" name="phone" id="phone" [formControl]="phoneFormControl">
+    </div>
+    <div style="margin-top: 20px;">
+    <button (click)="buttonClick()">Click</button></div>
+</div>

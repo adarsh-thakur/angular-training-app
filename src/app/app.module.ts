@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 import { CounterComponent } from './components/counter/counter.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 import { TodoComponent } from './components/todo/todo.component';
@@ -22,6 +22,7 @@ import { AngularMaterialDemoComponent } from './angular-material-demo/angular-ma
 import { MatExpansionModule } from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { FormExampleComponent } from './form-example/form-example.component';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -39,11 +40,13 @@ import {MatIconModule} from '@angular/material/icon';
       ParentComponent,
       AngularMaterialDemoComponent,
       ChildComponent,
+      FormExampleComponent,
     ],
     imports: [
       BrowserModule,
       FormsModule,
       AppRoutingModule,
+      ReactiveFormsModule,
       MatButtonModule,
       MatCardModule,
       MatIconModule,
