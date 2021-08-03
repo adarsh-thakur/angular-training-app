@@ -16,7 +16,12 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { HomeComponent } from './components/home/home.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -32,12 +37,18 @@ import { ChildComponent } from './components/child/child.component';
       PageNotFoundComponent,
       HomeComponent,
       ParentComponent,
+      AngularMaterialDemoComponent,
       ChildComponent,
     ],
     imports: [
       BrowserModule,
       FormsModule,
-      AppRoutingModule
+      AppRoutingModule,
+      MatButtonModule,
+      MatCardModule,
+      MatIconModule,
+      MatExpansionModule,
+      BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
