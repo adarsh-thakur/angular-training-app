@@ -17,12 +17,15 @@ import { HomeComponent } from './components/home/home.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { FormExampleComponent } from './form-example/form-example.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -41,6 +44,7 @@ import { FormExampleComponent } from './form-example/form-example.component';
       AngularMaterialDemoComponent,
       ChildComponent,
       FormExampleComponent,
+      RxjsDemoComponent,
     ],
     imports: [
       BrowserModule,
@@ -48,6 +52,8 @@ import { FormExampleComponent } from './form-example/form-example.component';
       AppRoutingModule,
       ReactiveFormsModule,
       MatButtonModule,
+      MatInputModule, // input fields
+      MatSelectModule, //select box
       MatCardModule,
       MatIconModule,
       MatExpansionModule,

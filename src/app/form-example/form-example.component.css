@@ -2,3 +2,32 @@
     padding: 20px;
     text-align: center;
 }
+.card-wrapper{
+    height: 90vh;
+    padding: 100px;
+}
+mat-form-field{
+    width: 100%;
+}
+mat-card{
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.button-wrapper > button{
+    margin-left: 10px;
+}
+.user-card-head{
+    font-weight: bold;
+}
+.user-card{
+    display: flex;
+    padding: 15px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,17 +1,81 @@
-<div class="form-wrapper">
-    <!-- <form></form> -->
-    <!-- TEMPLATE DRIVEN FORM -->
-    <div>
-        <input type="text" name="name" id="name" [(ngModel)]="name" required (keypress)="print()">
-    </div>
+<!-- <div class="form-wrapper"> -->
+<!-- <form></form> -->
+<!-- TEMPLATE DRIVEN FORM -->
+<!-- <div>
+        <input type="text" name="name" id="name" [(ngModel)]="name" required (keypress)="print()" autocomplete="false">
+    </div> -->
 
-    <!-- REACTIVE FORM -->
-    <div style="margin-top: 20px;">
+<!-- REACTIVE FORM -->
+<!-- <div style="margin-top: 20px;">
         <input type="text" name="name" id="name" [formControl]="nameFormControl">
     </div>
     <div style="margin-top: 20px;">
         <input type="text" name="phone" id="phone" [formControl]="phoneFormControl">
     </div>
     <div style="margin-top: 20px;">
-    <button (click)="buttonClick()">Click</button></div>
+    <button (click)="buttonClick()">Click</button></div> -->
+<!-- </div> -->
+
+<div class="card-wrapper">
+    <mat-card>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Name *</mat-label>
+                <input type="text" matInput [formControl]="nameFormControl" placeholder="Ex. john doe"
+                    autocomplete="false">
+                <mat-error *ngIf="nameFormControl.hasError('required')">
+                    <!-- hasError returns boolean value based on the errors -->
+                    Name is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Email *</mat-label>
+                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com"
+                    autocomplete="false">
+                <mat-error *ngIf="emailFormControl.hasError('email')">
+                    Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input type="email" matInput [formControl]="phoneFormControl" placeholder="002144574"
+                    autocomplete="false">
+                <mat-error *ngIf="phoneFormControl.hasError('pattern')">
+                    Phone is <strong>not valid</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Gender</mat-label>
+                <mat-select [formControl]="genderFormControl">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div class="button-wrapper">
+                <button type="button" mat-stroked-button color="primary" (click)="reset()">Reset</button>
+                <button type="button" mat-raised-button color="primary" (click)="save()">Save</button>
+            </div>
+        </form>
+    </mat-card>
+
+    <mat-card class="user-card user-card-head" style="margin-top: 10px;">
+        <div>Name</div>
+        <div>Email</div>
+        <div>Phone</div>
+        <div>Gender</div>
+    </mat-card>
+
+        <mat-card class="user-card" style="margin-top: 2px;" *ngFor="let user of userList">
+            <div>{{user.name}}</div>
+            <div>{{user.email}}</div>
+            <div>{{user.phone}}</div>
+            <div>{{user.gender}}</div>
+        </mat-card>
+
 </div>
