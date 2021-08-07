@@ -28,6 +28,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
 import { TableExampleComponent } from './components/table-example/table-example.component';
 import {MatTableModule} from '@angular/material/table';
+import { ServiceExampleComponent } from './components/service-example/service-example.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -48,6 +51,7 @@ import {MatTableModule} from '@angular/material/table';
       FormExampleComponent,
       RxjsDemoComponent,
       TableExampleComponent,
+      ServiceExampleComponent,
     ],
     imports: [
       BrowserModule,
@@ -60,6 +64,8 @@ import {MatTableModule} from '@angular/material/table';
       MatSelectModule, //select box
       MatCardModule,
       MatIconModule,
+      HttpClientModule,
+      MatProgressSpinnerModule,
       MatExpansionModule,
       BrowserAnimationsModule
     ],

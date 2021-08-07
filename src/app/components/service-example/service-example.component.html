@@ -1,0 +1,8 @@
+
+<mat-spinner *ngIf="showLoading"></mat-spinner>
+<div *ngIf="!showLoading">Data Received</div>
+
+<div *ngFor="let user of userData">
+    <div><strong>Name</strong> : {{user.first_name}} {{user.last_name}}</div>
+    <div><strong>Email</strong> : {{user.email}}</div>
+</div>
