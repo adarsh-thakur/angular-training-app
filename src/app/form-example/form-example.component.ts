@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-form-example',
@@ -20,7 +21,12 @@ export class FormExampleComponent implements OnInit {
   ]);
   genderFormControl = new FormControl('', []);
 
-  userList: any[] = [];
+  displayedColumns: string[] = ['name', 'email', 'phone', 'gender', 'age'];
+  userList: any[] = [
+    { name: 'Adarsh Thakur', phone: 12345547, gender: 'Male', email: 'adarsh@mail.com' },
+    { name: 'Adarsh Thakur', gender: 'Male', email: 'adarsh@mail.com',age:24 },
+    { name: 'Adarsh Thakur', phone: 12345547, gender: 'Male', email: 'adarsh@mail.com' }
+  ];
 
   constructor() {
   }

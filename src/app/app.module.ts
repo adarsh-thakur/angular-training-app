@@ -26,6 +26,8 @@ import { FormExampleComponent } from './form-example/form-example.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
+import { TableExampleComponent } from './components/table-example/table-example.component';
+import {MatTableModule} from '@angular/material/table';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -45,12 +47,14 @@ import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
       ChildComponent,
       FormExampleComponent,
       RxjsDemoComponent,
+      TableExampleComponent,
     ],
     imports: [
       BrowserModule,
       FormsModule,
       AppRoutingModule,
       ReactiveFormsModule,
+      MatTableModule,
       MatButtonModule,
       MatInputModule, // input fields
       MatSelectModule, //select box
