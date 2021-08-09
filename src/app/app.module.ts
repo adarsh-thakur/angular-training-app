@@ -35,6 +35,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogContentComponent } from './dialog-content/dialog-content.component';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -57,6 +60,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
       TableExampleComponent,
       ServiceExampleComponent,
       SideBarComponent,
+      DialogExampleComponent,
+      DialogContentComponent,
     ],
     imports: [
       BrowserModule,
@@ -72,6 +77,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
       HttpClientModule,
       MatProgressSpinnerModule,
       MatToolbarModule,
+      MatDialogModule,
       MatSidenavModule,
       MatListModule,
       MatExpansionModule,

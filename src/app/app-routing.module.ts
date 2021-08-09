@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes,RouterModule } from '@angular/router'; //this router package is important for implementing routing in Angular
+import { Routes, RouterModule } from '@angular/router'; //this router package is important for implementing routing in Angular
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { TodoComponent } from './components/todo/todo.component';
@@ -14,6 +14,7 @@ import { FormExampleComponent } from './form-example/form-example.component';
 import { TableExampleComponent } from './components/table-example/table-example.component';
 import { ServiceExampleComponent } from './components/service-example/service-example.component';
 import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 
 
@@ -21,43 +22,47 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    pathMatch:'full'
+    pathMatch: 'full'
   },
   {
     path: 'hello-world',
-    component:HelloWorldComponent
+    component: HelloWorldComponent
   },
   {
     path: 'counter',
-    component:CounterComponent
+    component: CounterComponent
   },
   {
     path: 'todo',
-    component:TodoComponent
+    component: TodoComponent
   },
   {
     path: 'life-cycle',
-    component:LifeCycleComponent
+    component: LifeCycleComponent
   },
   {
     path: 'form-example',
-    component:FormExampleComponent
+    component: FormExampleComponent
   },
   {
     path: 'table-example',
-    component:TableExampleComponent
+    component: TableExampleComponent
   },
   {
     path: 'service-example',
-    component:ServiceExampleComponent
+    component: ServiceExampleComponent
   },
   {
     path: 'rxjs-example',
-    component:RxjsDemoComponent
+    component: RxjsDemoComponent
   },
   {
     path: 'user-detail',
-    component:UserDetailComponent
+    component: UserDetailComponent
+  },
+  {
+    path: 'dialog-example',
+    component: DialogExampleComponent
   },
   {
     path: 'parent',
@@ -65,13 +70,13 @@ const routes: Routes = [
     children: [
       {
         path: 'child',
-        component:ChildComponent
+        component: ChildComponent
       }
     ]
   },
   {
     path: '**',
-    component:PageNotFoundComponent
+    component: PageNotFoundComponent
   }
 ];
 
@@ -81,7 +86,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forRoot(routes)
   ],
-  exports:[RouterModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
 
