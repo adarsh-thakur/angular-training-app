@@ -21,13 +21,7 @@ export class FormExampleComponent implements OnInit {
   ]);
   genderFormControl = new FormControl('', []);
 
-  displayedColumns: string[] = ['name', 'email', 'phone', 'gender', 'age'];
-  userList: any[] = [
-    { name: 'Adarsh Thakur', phone: 12345547, gender: 'Male', email: 'adarsh@mail.com' },
-    { name: 'Adarsh Thakur', gender: 'Male', email: 'adarsh@mail.com',age:24 },
-    { name: 'Adarsh Thakur', phone: 12345547, gender: 'Male', email: 'adarsh@mail.com' }
-  ];
-
+  userList: any[] = [];
   constructor() {
   }
 

@@ -1,0 +1,16 @@
+.example-container{
+    height: 93.3%;
+    overflow-x: hidden;
+}
+mat-nav-list{
+    padding: 20px 10px;
+}
+mat-list-item >div.mat-list-item-content{
+    padding: 0 !important;
+}
+mat-icon {
+    margin-right: 10px !important;
+}
+.example-sidenav-content{
+    padding: 25px;
+}

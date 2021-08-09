@@ -10,6 +10,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { HomeComponent } from './components/home/home.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { FormExampleComponent } from './form-example/form-example.component';
+import { TableExampleComponent } from './components/table-example/table-example.component';
+import { ServiceExampleComponent } from './components/service-example/service-example.component';
+import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
 
 
 
@@ -34,6 +38,22 @@ const routes: Routes = [
   {
     path: 'life-cycle',
     component:LifeCycleComponent
+  },
+  {
+    path: 'form-example',
+    component:FormExampleComponent
+  },
+  {
+    path: 'table-example',
+    component:TableExampleComponent
+  },
+  {
+    path: 'service-example',
+    component:ServiceExampleComponent
+  },
+  {
+    path: 'rxjs-example',
+    component:RxjsDemoComponent
   },
   {
     path: 'user-detail',

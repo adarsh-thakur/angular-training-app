@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="isExpanded = !isExpanded">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name">Angular Training</h1>
+</mat-toolbar>
+<mat-sidenav-container class="example-container" autosize>
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
+        [style.width]="isExpanded ? '180px' : '61px'" (mouseleave)="mouseleave()">
+        <mat-nav-list>
+            <mat-list-item>
+                <div routerLink="/">
+                    <mat-icon>home</mat-icon>
+                    <span *ngIf="isExpanded">Dashboard</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div routerLink="/">
+                    <mat-icon>list</mat-icon>
+                    <span *ngIf="isExpanded">User List</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div routerLink="/">
+                    <mat-icon>person</mat-icon>
+                    <span *ngIf="isExpanded">User List</span>
+                </div>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <div class="example-sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>

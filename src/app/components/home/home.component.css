@@ -1,0 +1,7 @@
+.demo-example-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.demo-example-wrapper > mat-card{
+    margin: 10px;
+}

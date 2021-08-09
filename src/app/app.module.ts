@@ -18,7 +18,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
+import { AngularMaterialDemoComponent } from './components/angular-material-demo/angular-material-demo.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -30,7 +30,11 @@ import { TableExampleComponent } from './components/table-example/table-example.
 import {MatTableModule} from '@angular/material/table';
 import { ServiceExampleComponent } from './components/service-example/service-example.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -52,6 +56,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
       RxjsDemoComponent,
       TableExampleComponent,
       ServiceExampleComponent,
+      SideBarComponent,
     ],
     imports: [
       BrowserModule,
@@ -66,6 +71,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
       MatIconModule,
       HttpClientModule,
       MatProgressSpinnerModule,
+      MatToolbarModule,
+      MatSidenavModule,
+      MatListModule,
       MatExpansionModule,
       BrowserAnimationsModule
     ],
