@@ -22,7 +22,7 @@ import { AngularMaterialDemoComponent } from './components/angular-material-demo
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { FormExampleComponent } from './form-example/form-example.component';
+import { FormExampleComponent } from './components/form-example/form-example.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
@@ -35,9 +35,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
-import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { DialogContentComponent } from './dialog-content/dialog-content.component';
+import { DialogContentComponent } from './components/dialog-content/dialog-content.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -62,6 +63,7 @@ import { DialogContentComponent } from './dialog-content/dialog-content.componen
       SideBarComponent,
       DialogExampleComponent,
       DialogContentComponent,
+      UserListComponent,
     ],
     imports: [
       BrowserModule,
