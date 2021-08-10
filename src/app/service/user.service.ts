@@ -9,11 +9,18 @@ export class UserService {
   constructor(private http: HttpClient) {
   }
   fetchUserData() {
-    return this.http.get('https://reqres.in/api/users?page=2');
+    return this.http.get('https://reqres.in/api/users?page=2', {});
   }
 
   getUser() {
-    return this.http.get(`${environment.baseURL}user`, {
+    return this.http.get(`${environment.baseURL}/user`, {
+      headers: {
+        'app-id': environment.appId
+      }
+    });
+  }
+  getUserById(userId: string) {
+    return this.http.get(`${environment.baseURL}/user/${userId}`, {
       headers: {
         'app-id': environment.appId
       }

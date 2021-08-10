@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   appId: '61112dadb0967427e39bd072',
-  baseURL: 'https://dummyapi.io/data/api/'
+  baseURL: 'https://dummyapi.io/data/api'
 };
 
 /*
