@@ -42,6 +42,7 @@ import { DialogContentComponent } from './components/dialog-content/dialog-conte
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import { UserTableComponent } from './components/user-table/user-table.component';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -68,6 +69,7 @@ import { MatNativeDateModule } from '@angular/material/core';
       DialogContentComponent,
       UserListComponent,
       UserFormComponent,
+      UserTableComponent,
     ],
     imports: [
       BrowserModule,

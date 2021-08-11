@@ -15,6 +15,8 @@ import { TableExampleComponent } from './components/table-example/table-example.
 import { ServiceExampleComponent } from './components/service-example/service-example.component';
 import { RxjsDemoComponent } from './components/rxjs-demo/rxjs-demo.component';
 import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 
 
@@ -63,6 +65,14 @@ const routes: Routes = [
   {
     path: 'dialog-example',
     component: DialogExampleComponent
+  },
+  {
+    path: 'user-form',
+    component: UserFormComponent
+  },
+  {
+    path: 'user-list',
+    component: UserListComponent
   },
   {
     path: 'parent',

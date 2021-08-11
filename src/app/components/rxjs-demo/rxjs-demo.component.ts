@@ -49,17 +49,17 @@ export class RxjsDemoComponent implements OnInit {
     // ############################################################################
     // Rxjs Way
 
-    // return new Observable(observer => {
-    //   // setTimeout(() => {
-    //   //   this.counter++;
-    //   //   observer.next(this.counter);
-    //   // }, 5000);
+    return new Observable(observer => {
+      // setTimeout(() => {
+      //   this.counter++;
+      //   observer.next(this.counter);
+      // }, 5000);
 
-    //   setInterval(() => {
-    //     this.counter++;
-    //     observer.next(this.counter);
-    //   }, 5000);
-    // })
+      // setInterval(() => {
+      //   this.counter++;
+      //   observer.next(this.counter);
+      // }, 5000);
+    })
   }
   printCounter() {
     let div = document.createElement('DIV')

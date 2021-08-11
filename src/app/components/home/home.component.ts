@@ -11,19 +11,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private _userService: UserService) { }
 
-  ngOnInit(): void {
-    this._userService.getUser().subscribe((data:any) => {
-      console.log(data);
-    })
-    // this._userService.getUserById("60d0fe4f5311236168a109ca").subscribe((data) =>
-    // {
-    //   console.log('###############################Inside SUCCESS Block#########################################################################################')
-    //   console.log(data);
-    // }, (err) => {
-    //   console.log('###############################Inside ERROR Block#########################################################################################')
-    //   console.log(err)
-    // });
-  }
+  ngOnInit(): void {}
 
 }
 
