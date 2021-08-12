@@ -1,0 +1,37 @@
+<div class="wrapper">
+    <form [formGroup]="movieForm" class="userform">
+        <div class="row h3 p-2 pl-3 text-white">Add Movie</div>
+        <div class="row">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Name of the movie</mat-label>
+                <input type="text" matInput formControlName="movieName" placeholder="Ex. Bahubali" autocomplete="false">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Rating</mat-label>
+                <mat-select formControlName="rating">
+                    <mat-option value="1">1+</mat-option>
+                    <mat-option value="2">2+</mat-option>
+                    <mat-option value="3">3+</mat-option>
+                    <mat-option value="4">4+</mat-option>
+                    <mat-option value="5">5+</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Choose a release date</mat-label>
+                <input matInput [matDatepicker]="datePicker" formControlName="releaseDate">
+                <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+                <mat-datepicker #datePicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="row" style="text-align: right;">
+            <div class="col">
+                <button mat-stroked-button class="m-2" color="secondary" (click)="close()" class="text-white">Close</button>
+                <button mat-raised-button class="m-2" color="primary" (click)="save()">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

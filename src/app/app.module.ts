@@ -43,6 +43,9 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { UserTableComponent } from './components/user-table/user-table.component';
+import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { MovieFormComponent } from './components/movie-form/movie-form.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule(
   { // this is a NgModule Decorator -> @decoratorName -> it is way of telling angular what type of data we are providing
     declarations: [
@@ -70,6 +73,8 @@ import { UserTableComponent } from './components/user-table/user-table.component
       UserListComponent,
       UserFormComponent,
       UserTableComponent,
+      MovieListComponent,
+      MovieFormComponent,
     ],
     imports: [
       BrowserModule,
@@ -88,6 +93,7 @@ import { UserTableComponent } from './components/user-table/user-table.component
       MatDialogModule,
       MatSidenavModule,
       MatDatepickerModule,
+      MatSnackBarModule,
       MatNativeDateModule,
       MatListModule,
       MatExpansionModule,

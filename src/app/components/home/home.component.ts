@@ -11,7 +11,9 @@ export class HomeComponent implements OnInit {
 
   constructor(private _userService: UserService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this._userService.getMovies();
+  }
 
 }
 

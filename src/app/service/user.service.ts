@@ -26,4 +26,14 @@ export class UserService {
       }
     });
   }
+  getMovies() {
+    return this.http.get('http://localhost:3000/movies');
+  }
+  addMovie(data:any) {
+    return this.http.post('http://localhost:3000/movies', data);
+  }
+  deleteMovie(movieId:string) {
+    return this.http.delete(`http://localhost:3000/movies/${movieId}`);
+    // return this.http.delete("http://localhost:3000/movies/" + movieId);
+  }
 }

@@ -1,0 +1,12 @@
+/* .userform {
+    background-color: #424242;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+} */
+mat-form-field{
+    width: 100%;
+}
+mat-form-field{
+    color: white;
+}
